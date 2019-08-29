@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>String Encoder</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/main.css" th:href="@{/css/main.css}">
+
+</head>
+<body>
+
+<form action="/encode" method="post">
+<div class="form-group">
+    <input type="text" class="textToEncode" id="text" placeholder="Text to encode / decode" name="text">
+</div>
+    <br>
+    <br>
+
+    <div class="submitDiv">
+<button type="submit" class="submit" id="enocdeSubmit" name="encode">Encode</button>
+<button type="submit" class="submit" id="decodeSubmit" name="decode" formaction="/decode">Decode</button>
+    </div>
+</form>
+
+
+</body>
+</html>
